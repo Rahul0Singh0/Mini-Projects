@@ -62,14 +62,14 @@ function displayGuess(guess) {
 }
 
 function displayMessage(message) {
-    lowOrHi.innerHTML = `<h2>${message}</h2>`
+    lowOrHi.innerHTML = `<h3>${message}</h3>`
 }
 
 function endGame() {
     userInput.value = '' // clean value
     userInput.setAttribute('disabled', '') // key-value pair set in this function so, in second parameter nothing
     p.classList.add('button')
-    p.innerHTML = `<h2 id="newGame">Start new Game</h2>`
+    p.innerHTML = `<h3 id="newGame">Start new Game</h3>`
     startOver.appendChild(p)
     playGame = false
     newGame()
